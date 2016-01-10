@@ -45,7 +45,6 @@ start_service() {
     add_forwarder_servers "${SPLUNK_FORWARD_SERVER}"
 
     sudo -HEu ${SPLUNK_USER} tail -n 0 -f ${SPLUNK_HOME}/var/log/splunk/splunkd_stderr.log &
-
 }
 
 
